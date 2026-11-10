@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>ex3</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+    <ul id="fileAttente">
+        <li id="etud-cible" class=" selectionne "> Etudiant Reference : Mohamed Ben Ali ( DSI ) </li>
+    </ul>
+    <hr>
+    <label>Nom de l'étudiant :</label>
+    <input type="text" id="nomEtudiant" placeholder="Entrez le nom"><br><br>
+
+    <label>Choisir l'opération :</label><br>
+    <input type="radio" name="actionDOM" value="debut" checked> Ajouter au tout début (prepend)<br>
+    <input type="radio" name="actionDOM" value="fin"> Ajouter à la toute fin (append)<br>
+    <input type="radio" name="actionDOM" value="avant"> Insérer juste avant l'étudiant référence (before)<br>
+    <input type="radio" name="actionDOM" value="apres"> Insérer juste après l'étudiant référence (after)<br>
+    <input type="radio" name="actionDOM" value="remplacer"> Remplacer l'étudiant référence (replaceWith)<br><br>
+
+    <button onclick="executerAction()">Exécuter l'action</button>
+    <button onclick="reinitialiserFile()">Vider la file</button>
+
+    <script src="exo3.js"></script>
+</body>
+
+</html>
